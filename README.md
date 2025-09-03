@@ -33,7 +33,7 @@ CSS3
 📸 Preview
 
 You can view my portfolio live here:
-👉 Live Demo
+👉 Live Demo : https://vipul-sharm.github.io/my-first-portfolie/
 
 📬 Contact
 
@@ -43,4 +43,4 @@ Email: vipulsharma21215@gmail.com
 
 LinkedIn: linkedin.com/in/vipulsharma
 
-GitHub: github.com/vipulsharma
+GitHub: https://vipul-sharm.github.io/my-first-portfolie/
