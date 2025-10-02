@@ -41,6 +41,6 @@ Name: Vipul Sharma
 
 Email: vipulsharma21215@gmail.com
 
-LinkedIn: linkedin.com/in/vipulsharma
+LinkedIn: https://www.linkedin.com/in/vipul-sharma-24a394287/
 
 GitHub: https://vipul-sharm.github.io/my-first-portfolie/
