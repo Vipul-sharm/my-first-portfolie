@@ -9,84 +9,115 @@
             margin: 0;
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            color: #fff; /* white text for contrast */
+            color: #fff;
             background: url("0dd225b4-eeed-4fa4-a113-1ea694306532.png") no-repeat center center fixed;
             background-size: cover;
         }
 
         header {
-            background-color: rgba(0, 0, 0, 0.6); /* transparent black overlay */
+            background: rgba(0, 0, 0, 0.7);
             color: white;
-            padding: 20px 0;
+            padding: 40px 20px;
             text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
         }
 
         nav {
             display: flex;
             justify-content: center;
-            background: rgba(0, 0, 0, 0.7);
+            background: rgba(0, 0, 0, 0.85);
+            padding: 10px;
+            gap: 20px;
         }
 
         nav a {
             color: white;
-            padding: 14px 20px;
+            padding: 10px 16px;
             text-decoration: none;
-            text-align: center;
+            font-weight: bold;
+            transition: 0.3s;
+            border-radius: 6px;
         }
 
         nav a:hover {
-            background-color: rgba(255, 255, 255, 0.2);
+            background-color: #FFD700;
+            color: black;
         }
 
         section {
-            padding: 40px 20px;
+            padding: 40px 30px;
             max-width: 1000px;
-            margin: auto;
-            background: rgba(0, 0, 0, 0.6); /* semi-transparent box */
-            border-radius: 10px;
+            margin: 30px auto;
+            background: rgba(0, 0, 0, 0.65);
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.6);
         }
 
         h2 {
-            color: #FFD700; /* golden heading */
+            color: #FFD700;
+            border-bottom: 2px solid #FFD700;
+            display: inline-block;
+            margin-bottom: 20px;
         }
 
-        .skills, .projects, .contact {
+        .skills {
             margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
         }
 
         .skill-item {
-            display: inline-block;
             background: #FFD700;
             color: black;
-            padding: 8px 12px;
-            margin: 5px;
-            border-radius: 5px;
+            padding: 10px 16px;
+            border-radius: 8px;
             font-weight: bold;
+            transition: transform 0.2s;
+        }
+
+        .skill-item:hover {
+            transform: scale(1.1);
+            background: #ffec80;
         }
 
         .project {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 15px;
-            margin: 15px 0;
-            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.08);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.8);
         }
 
         footer {
-            background: rgba(0, 0, 0, 0.8);
+            background: rgba(0, 0, 0, 0.9);
             color: white;
             text-align: center;
-            padding: 20px 0;
-            margin-top: 20px;
+            padding: 25px 0;
+            margin-top: 40px;
+            font-size: 14px;
+            letter-spacing: 1px;
         }
 
         /* Responsive */
-        @media (max-width: 600px) {
+        @media (max-width: 768px) {
             nav {
                 flex-direction: column;
+                gap: 10px;
             }
-            .skill-item {
-                display: block;
-                width: fit-content;
+            section {
+                margin: 15px;
+                padding: 25px 20px;
             }
         }
     </style>
@@ -95,7 +126,7 @@
 
 <header>
     <h1>Vipul Sharma</h1>
-    <p>Computer Science Student | Aspiring  Cloud Computing</p>
+    <p>Computer Science Student | Aspiring Cloud Computing Enthusiast</p>
 </header>
 
 <nav>
@@ -107,7 +138,9 @@
 
 <section id="about">
     <h2>About Me</h2>
-    <p>Hello! I am Vipul Sharma, a passionate Computer Science student from Galgotias University. I enjoy building cloud computing and learning new technologies. I am looking for internship opportunities where I can apply my skills and gain real-world experience.</p>
+    <p>Hello! I am <b>Vipul Sharma</b>, a passionate Computer Science student from Galgotias University. 
+    I enjoy building cloud-based projects and learning new technologies. 
+    I am looking for internship opportunities where I can apply my skills and gain real-world experience.</p>
 </section>
 
 <section id="skills">
@@ -115,9 +148,8 @@
     <div class="skills">
         <span class="skill-item">HTML</span>
         <span class="skill-item">CSS</span>
-        <span class="skill-item">java</span>
-        <span class="skill-item">AWS cloud computing</span>
-        
+        <span class="skill-item">Java</span>
+        <span class="skill-item">AWS Cloud Computing</span>
     </div>
 </section>
 
@@ -126,22 +158,20 @@
 
     <div class="project">
         <h3>Portfolio Website</h3>
-        <p>Created a responsive portfolio website using HTML, CSS  to showcase my projects and skills.  
-       
-       </div>
+        <p>Created a <b>responsive portfolio website</b> using HTML & CSS to showcase my projects and skills.</p>
+    </div>
     
-    <div class=" AWS Project">
+    <div class="project">
         <h3>Fitness Website</h3>
         <p>Developed a <b>Fitness & Health webpage</b> to promote healthy lifestyle, exercise routines, and diet plans.  
-        The website contains interactive sections like workout schedules, fitness tips, and motivational content.</p>
-        <p>Technologies: HTML, CSS (optionally hosted on AWS S3)</p>
-        
+        The website includes workout schedules, fitness tips, and motivational content.</p>
+        <p><b>Technologies:</b> HTML, CSS | Hosted on <b>AWS S3</b></p>
     </div>
 </section>
 
 <section id="contact">
     <h2>Contact</h2>
-    <p>Email: vipulsharma21215@.com</p>
+    <p>Email: <a href="mailto:vipulsharma21215@.com" style="color:#FFD700;">vipulsharma21215@.com</a></p>
     <p>Phone: +91 9990613192</p>
     <p>LinkedIn: <a href="https://www.linkedin.com/feed/" target="_blank" style="color:#FFD700;">linkedin.com/in/vipulsharma</a></p>
     <p>GitHub: <a href="https://github.com/Vipul-sharm?tab=repositories" target="_blank" style="color:#FFD700;">github.com/vipulsharma</a></p>
